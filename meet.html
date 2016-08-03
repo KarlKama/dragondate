@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+    <link rel = "stylesheet" href= "styles/bootstrap.min.css">
+	<link rel = "stylesheet" href= "styles/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src = "script/jquery-1.11.3.min.js"></script> 
+    <script src="script/Controllers/controller.js"> </script>
+</head>
+<body class="meet" ng-app="mainApp">
+    <div class="container">
+        <div class="row" id="header"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="frame" id="borderimg1" ng-controller="dragons">
+                    <div class="row drake" ng-app="dragon">
+                        <div class="col-md-4 col-xs-6 col-sm-4">
+                            <img ng-src="{{ dragon.image }}"/>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <h1> {{ dragon.name }} </h1>
+                            <p class="dragontext"> {{ dragon.description }} </p>
+                        </div>
+                    </div>
+                    <div class="row ratings">
+                        <div class="col-xs-8 col-sm-5 col-xs-3">
+                            <button class="button3" id="like" value="like"> </button>
+                        </div>
+                        <div class="col-xs-8 col-sm-5 col-xs-3">
+                            <button class="button4" onclick="dislike();" value="dislike"> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <div id="borderimg1" class="matches">
+                    <h1 class="dragontitle"> Your matches </h1>
+                </div>
+                <div>
+                    <a class=button7 style=vertical-align:middle href="index.html"><span> Back </span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

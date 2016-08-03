@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "Dragonfont";
+    src: url(../fonts/Rapscallion/RAPSCALL.ttf) format("truetype");
+}
+body.start {
+    background-image: url(../img/dragonbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 100px;
+}
+body.meet {
+    background-image: url(../img/fig19.Van-Goyen2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.frame {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+#borderimg1 {
+    border: 30px solid transparent;
+    -webkit-border-image: url(../img/Border-image-clipart.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/Border-image-clipart.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(../img/Border-image-clipart.png) 50 round;
+}
+.frame2 {
+    margin-top: 35vh;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+}
+.sex{
+   padding-left: 28px; 
+}
+.dragontitle{
+    color: black;
+    font-family: "Dragonfont", Verdana;
+    font-size: 50px;
+}
+
+.dragontitle2 {
+    color: aliceblue;
+    font-family: "Dragonfont", Verdana;
+    font-size: 70px;
+}
+.dragontext {
+    font-size: 15px;
+}
+.drake, .ratings{
+    padding: 30px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+}
+.ratings {
+    padding-top: 0px;
+    padding-left: 100px;
+}
+.drake img {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.title {
+    color:aliceblue;
+    padding: 40px;
+    font-size: 20px;
+    padding-left: 0px;
+}
+#header h1 {
+    padding: 10px;
+    padding-left: 30px;
+}
+.matches {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 10px;
+    float: right;
+    text-align: left;
+    font-weight: bold;
+    height:375px;
+    width: 300px;
+    border:1px solid #ccc;
+    overflow: auto;
+    word-wrap: break-word;
+}
+.matches a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e6e866;
+}
+.matches h1 {
+    color: #dadc3b;
+}
+
+/*  PROFIIL  */
+body.profile {
+    background-image: url(../img/dragonbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.suur {
+    float: left;
+    position: relative;
+    height: 600px;
+    width: 450px;
+}
+
+.suur img#paber {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.info {
+    position: absolute;
+    padding: 60px; 
+    padding-left: 100px;
+    padding-top: 80px;
+}
+.info img {
+    height: 200px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 2px solid black;
+}
+.info h1 {
+    font-family: "Dragonfont", Verdana;
+    text-align: center;
+    font-size: 45px;
+}
+#back {
+    padding-left: 30px;
+    margin-top: 200px;
+}
+/* Button*/
+.button, .button7 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #e87b0a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 184px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button7{
+    width: 130px;
+    font-size: 15px;
+    background-color: #948575;
+    float: right;
+}
+
+.button span, .button7 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after, .button7 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span, .button7:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after, .button7:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button2, .button3, .button4, button5, button6{
+    margin: 5px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+ .button5:hover, .button6:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button5 {
+    background-color: #0a55ff;
+    color: aliceblue;
+}
+.button6 {
+    margin-left: 10px;
+    background-color: #ff29f7;
+    color: aliceblue;
+}
+.button3 {
+    background: url(../img/box_1.png) 0 0 transparent;
+    padding: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.button4 {
+    background: url(../img/box_1.png) 0 0 transparent;
+    padding: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.button3:hover{
+    background: url(../img/box_3.png) 0 0 transparent;
+    padding: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button4:hover {
+    background: url(../img/box2.png) 0 0 transparent;
+    padding: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#notific {
+    margin-left: 100px;
+    font-family: "Dragonfont", Verdana;
+    font-size: 35px;
+    color: #36e216;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 30px solid transparent;
+    -webkit-border-image: url(../img/Border-image-clipart.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/Border-image-clipart.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(../img/Border-image-clipart.png) 50 round;
+    
+}
+
+@media (max-width: 1000px) and (min-width: 300px){
+    .matches{
+        float: left;
+        width: 280px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 300px){
+    #back {
+        margin-top: 0px;
+    }
+    .start {
+        margin-left: 25px !important;   
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .dragontitle {
+        font-size: 30px;
+    }
+}
+@media (max-width: 567px) and (min-width: 300px){
+    #notific {
+        margin-left: 50px;
+        font-size: 17px;
+        width: 180px;
+    }
+    
+    .button3, .button4{
+        padding: 16px;
+    }
+    .button3:hover, .button4:hover{
+        padding: 16px;
+    }
+    .button7 {
+        margin-left: 100px;
+        width: 80px;
+        font-size: 10px; 
+    }
+    
+    h1 {
+        font-size: 15px;
+    }
+    .dragontext{
+        font-size: 9px;
+    }
+    .drake, .ratings {
+        padding: 20px;
+        padding-left: 30px;
+    }
+}

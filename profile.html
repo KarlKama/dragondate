@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+    <link rel = "stylesheet" href= "styles/bootstrap.min.css">
+	<link rel = "stylesheet" href="styles/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src = "script/jquery-1.11.3.min.js"></script> 
+    <script src="script/Controllers/controller.js"> </script> 
+</head>
+<body class="profile" ng-app="mainApp">
+    <div class="container">
+        <div class="row">
+            <div class="suur col-xs-6 col-sm-4 col-md-4" ng-controller="draakon">
+                <img id="paber" src="img/Psychic_Paper.png"/>
+                <div class="info" ng-app="dragon">
+                    <img ng-src="{{ dragon.image }}"/>
+                    <h1> {{ dragon.name }} </h1>
+                    <p class="dragontext"> {{ dragon.description }} </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 col-sm-4" id="back">
+
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        var andmed;
+        var userid = getUrlParameter("id");
+        
+        app.controller('draakon', function($scope, $http) {
+            $http.get('http://www.dragonsofmugloar.com/dating/api/profile/' + userid).success(function(response){
+                $scope.dragon = response;
+                andmed = response;
+                for (var property in andmed) {
+                    if(property == "gender") {
+                        vastus = andmed[property];
+                        var message = "<button class=button2 id=message> Send a message </button><br/>"; //For future development
+                        if(vastus == "girl") {
+                            var tile = "<a class=button style=vertical-align:middle href=meet.html?gender=girl><span> Back </span></a>";
+                            $('#back').append(message);
+                            $('#back').append(tile);
+                        } else {
+                            var tile = "<a class=button style=vertical-align:middle href=meet.html?gender=boy><span> Back </span></a>";
+                            $('#back').append(message);
+                            $('#back').append(tile);
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</html>
